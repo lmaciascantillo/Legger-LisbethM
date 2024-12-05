@@ -1,0 +1,48 @@
+[21-Nov-2023 23:51:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:52:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:52:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:52:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:53:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:53:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:53:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:53:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:54:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:54:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:54:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1
+[21-Nov-2023 23:54:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/b1eeo36k53n0/public_html/wp-content/themes/noblewest/index.php on line 1

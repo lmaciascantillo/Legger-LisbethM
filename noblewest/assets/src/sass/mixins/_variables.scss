@@ -1,0 +1,214 @@
+/* =Variables
+****************************************************************************************/
+//primary
+$orange: #EE5523;
+$primary-one: #EE5523;
+$darkgrey: #272727;
+$primary-two: #272727;
+
+//secondary
+$blue: #00739D;
+$purple: #481465;
+$violet: #9D0073;
+$red: #D20D13;
+$darkgreen: #678D00;
+$lightgreen: #ACBA01;
+$yellow: #FFCF00;
+
+$dark: #030504;
+$grey: #f2f3f5;
+$grey-one: #4E4E4E;
+$grey-two: #757575;
+$grey-three: #A4A5A5;
+$grey-four: #CCCCCC;
+$grey-five: #F7F7F7;
+$white: #FFFFFF;
+$black: #1A1A1A;
+
+
+/* =Animations
+****************************************************************************************/
+.fadein {
+	  animation: fade_in 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+//Animation - Global - General fade-in with simple opacity toggle
+@keyframes fade_in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+//Animation - Global - General fade-in for sections and headlines that also include movement
+@keyframes fade_in_text {
+    from {
+      opacity: 0;
+      transform: translate(-15%,0);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0,0);
+    }
+}
+//Animation - Global - General fade-in from bottom for banner image layers and others
+@keyframes fade_in_image {
+  from {
+    opacity: 0;
+    transform: translate(0,15%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+@keyframes fade_in_image_top {
+  from {
+    opacity: 0;
+    transform: translate(0,-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+//Animation - Global - Header sticky animation slide in
+@keyframes sticky_drop {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+//Animation - Home - Kid with balloons travel movement
+@keyframes move_y {
+    from {
+      bottom: 200%;
+    }
+    to {
+      bottom: 0;
+    }
+}
+@keyframes grow_fade {
+  from {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+//Animation - Home - Kid with balloons oscillating animation to indicate floating
+@keyframes oscillate {
+    from {
+      translate: 0 0;
+      transform: rotate(0deg);
+      animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);
+    }
+    25% {
+      translate: 10px 0;
+      transform: rotate(3deg);
+      animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);
+    }
+    50% {
+      translate: 0 0;
+      transform: rotate(0deg);
+      animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);
+    }
+    75% {
+      translate: -10px 0;
+      transform: rotate(-3deg);
+      animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);
+    }
+    to {
+      translate: 0 0;
+      transform: rotate(0deg);
+    }
+}
+
+//Animation - 404 - Floating / Levitating Q's
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+//Animation - Home - Solutions item fade ins
+@keyframes fade_in_solutions {
+  from {
+    opacity: 0;
+    transform: translate(0,15%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+@keyframes scale_in_solutions {
+  from {
+    opacity: 0;
+    transform: scale(.25) rotate(120deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0) scale(1) rotate(0deg);
+  }
+}
+//Animation - Header - Navigation sub-menu slide in
+@keyframes slideInLeft {
+	from { transform: translate(-25%,0); opacity: 0; }
+	to { transform: translate(0,0); opacity: 1; }
+}
+
+//Animation - Subpages - Clip Path Banner
+@keyframes clip_banner {
+  from { clip-path: polygon(0 0,100% 0,100% 100%,50% 100%,50% 100%,0 100%); }
+  to { clip-path: polygon(0 0,100% 0,100% 80%,50% 100%,50% 100%,0 80%); }
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+// gradient animation
+
+@-webkit-keyframes effect {
+  to {
+      background-position: -200% center;
+  }
+}
+
+@keyframes effect {
+  to {
+      background-position: -200% center;
+  }
+}

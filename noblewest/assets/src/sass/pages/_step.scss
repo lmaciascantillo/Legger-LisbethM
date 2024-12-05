@@ -1,0 +1,616 @@
+.containerStep {
+  #heading {
+    text-transform: uppercase;
+    color: #d20d13;
+    font-weight: normal;
+  }
+  #register_form {
+    text-align: center;
+    position: relative;
+  }
+  #register_form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .form-card {
+    text-align: left;
+  }
+  #register_form fieldset:not(:first-of-type) {
+    display: none;
+  }
+  #register_form input,
+  #register_form textarea {
+    padding: 8px 15px;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  #register_form input:focus,
+  #register_form textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #d20d13;
+    outline-width: 0;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-top: transparent !important;
+  }
+  #register_form .action-button {
+    width: 100px;
+    background: #d20d13;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 0;
+    float: right;
+  }
+  #register_form .action-button:hover,
+  #register_form .action-button:focus {
+    background-color: #d20d13;
+  }
+  #register_form .action-button-previous {
+    background: #fff;
+    border: 1px solid #d20d13;
+    color: #d20d13 !important;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 0 5px 10px 0;
+    border-radius: 0.3rem !important;
+    float: left;
+    &:hover {
+      background-color: #d20d13 !important;
+      border-color: #d20d13 !important;
+      color: #fff !important;
+    }
+  }
+  #register_form .action-button-previous:hover,
+  #register_form .action-button-previous:focus {
+    background-color: #000000;
+  }
+  .card {
+    z-index: 0;
+    border: none;
+    position: relative;
+  }
+  .fs-title {
+    font-size: 25px;
+    color: #d20d13;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .purple-text {
+    color: #d20d13;
+    font-weight: normal;
+  }
+  .steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .fieldlabels {
+    color: gray;
+    text-align: left;
+  }
+  #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+  }
+  #progressbar .active {
+    color: #d20d13;
+  }
+  #progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+  }
+  #progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e";
+  }
+  #progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007";
+  }
+  #progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030";
+  }
+  #progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+  }
+  #progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+  }
+  #progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+  }
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+    background: #d20d13;
+  }
+  .progress {
+    height: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .progress-bar {
+    background-color: #d20d13;
+  }
+  .fit-image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .h3Step {
+    color: $black;
+    text-transform: initial;
+    text-align: left;
+  }
+
+  .h4Step {
+    color: #666666;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .btn-danger {
+    border-radius: 0.3rem !important;
+    &:hover {
+      border: 1px solid #d20d13 !important;
+    }
+  }
+  .btn.btn-light-step {
+    background: #fff;
+    border: 1px solid #d20d13;
+    color: #d20d13 !important;
+    &:hover {
+      background-color: #d20d13 !important;
+      border-color: #d20d13 !important;
+      color: #fff !important;
+    }
+  }
+
+  .containerStep #register_form input:focus,
+  .containerStep #register_form textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #d20d13;
+    outline-width: 0;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-top: transparent !important;
+  }
+
+  .fade:not(.show) {
+    opacity: 1 !important;
+  }
+
+  select.form-select {
+    color: #1a1a1a;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    height: 66px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-select:focus {
+    border-color: #cc0000;
+    outline: 0;
+    box-shadow: 0 0 0 0.25remrgba (255, 200, 0, 0.25);
+    color: #cc0000;
+  }
+
+  .hide {
+    display: none;
+  }
+  label {
+    float: left;
+  }
+  .label-delete {
+    padding-top: 2%;
+  }
+  a.add-type {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+  .label-delete a {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  table {
+    width: 100%;
+    border: none;
+    margin-bottom: 30px;
+  }
+  tbody tr {
+    border: 1px solid #cc0000;
+    height: 20px;
+  }
+  tbody tr td {
+    height: 29px;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  tr.headindtr td {
+    text-align: left;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+
+  tr.headindtr td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  tr.headindtr {
+    border-top: 1px solid transparent !important;
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+  }
+  .col-delete {
+    padding-left: 20px;
+  }
+  .col-delete .col-md-3 {
+    padding-right: 20px;
+  }
+
+  .btn-yesno {
+    border: 1px solid #ccc !important;
+    border-radius: 2.3rem !important;
+    color: #ccc !important;
+  }
+
+  .btn-yesno:focus,
+  .btn-yesno:active,
+  .btn-yesno:focus-within,
+  .btn-yesno:focus-visible {
+    border: 1px solid #000000 !important;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+  }
+
+  input.radiobuttons {
+    padding: 0 !important;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 0 !important;
+    width: 1px !important;
+  }
+  span#error_yesno {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .float-n {
+    float: none;
+  }
+  .text-upp {
+    text-transform: uppercase;
+  }
+
+  .mydate {
+    border: 1px solid #cc0000 !important;
+    color: #000000 !important;
+  }
+  .d-block {
+    width: 100%;
+    display: block;
+  }
+  .Label-delete {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  tbody#drivers button:last-child {
+    display: none;
+  }
+  tbody#jugadores button:last-child {
+    display: none;
+  }
+  .btn-delete {
+    border: none !important;
+    background-color: transparent !important;
+    color: #d20d13;
+    font-weight: 700;
+  }
+  input[type="date"]:invalid + span:after {
+    content: "Date of Bird";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: #ccc;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  input[type="date"]:focus:invalid + span:after {
+    display: none;
+  }
+
+  input[type="date"]:not(:focus):invalid {
+    color: transparent;
+  }
+
+  .spanDate {
+    top: 17px;
+    width: 60%;
+    text-align: left;
+  }
+
+  
+}
+
+.alert.alert-warning.modal2 {
+  border-radius: 3px;
+  border: 0!important;
+  box-shadow: none!important;
+  background-color: red!important;
+  padding: 30px 120px!important;
+}
+
+.alert.alert-warning.modal1 {
+  border-radius: 3px;
+  border: 0!important;
+  box-shadow: none!important;
+  background-color: #1a1a1a!important;
+  padding: 0 120px!important;
+}
+
+.btn-close {
+  height: 26px;
+  width: 26px;
+  left: auto;
+  right: 20px!important;
+  bottom: auto;
+  top: 16px!important;
+  padding: 0px!important;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 24px;
+  border: 2px solid #ffffff;
+  border-radius: 26px;
+  box-shadow: 0px 0px 15px 1px rgb(2 2 2 / 75%);
+  text-shadow: 0px 0px 0px rgb(0 0 0 / 23%);
+  background: none!important;
+}
+
+.btn-close:hover {
+  color: #fff!important;
+  text-decoration: none;
+  opacity: .75;
+}
+
+.box {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.active_tab1 {
+  background-color: #fff;
+  color: #333;
+  font-weight: 600;
+}
+
+.inactive_tab1 {
+  background-color: #f5f5f5;
+  color: #333;
+  cursor: not-allowed;
+}
+
+.has-error {
+  border-color: #cc0000;
+  background-color: #ffff99;
+}
+
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.ml-15 {
+  margin-left: 15px !important;
+}
+
+.quote .imgBox {
+  width: 50px !important;
+}
+.quote .imgBox-damage {
+  width: 50px !important;
+}
+.quote .imgBox-other {
+  width: 50px !important;
+}
+
+/* Le quitamos el formato a los controles */
+input,
+select,
+textarea,
+span {
+  border: none;
+  background: white;
+  box-sizing: border-box;
+  font-family: Verdana;
+  font-size: 12px;
+  line-height: 12px;
+  outline: none;
+  padding: 0;
+  resize: none;
+  width: 300px;
+}
+
+.fake_placeholder {
+  margin-bottom: 10px;
+}
+
+/* el label emula el aspecto del input */
+.fake_placeholder label {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+}
+
+.fake_placeholder span {
+  color: #212529;
+  display: inline-block;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  transition: 0.25s;
+  top: 15px;
+  width: auto;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.fake_placeholder span.reubicar {
+  color: #00f;
+  font-size: 10px;
+  top: -12px;
+}
+
+.modal-dialog-bottom {
+  position: fixed !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+  .modal-content {
+    border-radius: 3px;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 30px px 120px !important;
+  }
+}
+
+.modal-dialog-bottom20 {
+  position: fixed !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: 30% !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.modal-body {
+  padding: 0!important;
+}
+
+.alert {
+  margin-bottom: 0!important;
+}
+
+body.modal-open {
+  overflow: auto !important;
+}
+
+// Bootstrap uses JS to set the element style so you can
+// override those styles like this
+body.modal-open[style] {
+  padding-right: 0px !important;
+}
+
+.modal {
+  padding-right: 0 !important;
+}
+
+#mainNav.navbar-shrink {
+  padding-right: 0px !important;
+}
+
+body.page-template-default.page.page-id-282.mega-menu-main-menu {
+  padding-right: 0px !important;
+}
+

@@ -1,0 +1,23 @@
+/* =Main Stylesheet
+****************************************************************************************/
+@charset "UTF-8";
+@import "base/reset";
+
+@import "mixins/font";
+@import "mixins/variables"; 
+@import "mixins/media_queries";
+@import "mixins/use_classes";
+
+@import "layout/base";
+@import "bootstrap/bootstrap"; 
+@import "layout/global";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/sub";
+@import "pages/search";
+
+@import "base/print";
+@import "base/blocks";
+@import "layout/generales";

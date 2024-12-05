@@ -1,0 +1,236 @@
+/* =Global
+****************************************************************************************/
+//Data-tip Tooltip
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+[data-tip] {
+	position:relative;
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #1a1a1a;	
+	position:absolute;
+	top:30px;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:35px;
+	left:0;
+	right:0;
+	margin:auto;
+	width: auto;
+	padding:5px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:9;
+	font-size: 0.75em;
+	height:18px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:table;
+}
+.col-xs-5,
+
+.col-sm-5,
+
+.col-md-5,
+
+.col-lg-5 {
+
+  min-height: 1px; 
+
+  position: relative;
+
+}
+
+.col-xs-5 {
+
+  float: left;
+
+  width: 20%;
+
+}
+
+@media (min-width: 768px) {
+
+	.col-sm-5 {
+  
+	  float: left;
+  
+	  width: 20%;
+  
+	}
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+	.col-md-5 {
+  
+	  float: left;
+  
+	  width: 20%;
+  
+	}
+  
+  }
+  
+  @media (min-width: 1200px) {
+  
+	.col-lg-5 {
+  
+	  float: left;
+  
+	  width: 20%;
+  
+	}
+  
+  }
+
+
+
+p {
+	font-family: $inter;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0;
+	line-height: 16px;
+}
+
+.btn-danger {
+    background-color: $red!important; 
+}
+
+.btn-light { 
+    color: $white!important;
+    border-color: $white;
+	color: #fff!important;
+    background-color: rgba(255,255,255,0.5)!important;
+}
+
+.red {
+	color: $red;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+a:hover {
+    color: $red!important;
+}
+
+a {
+	color: $red!important;
+}
+
+.ml-3 {
+	margin-left: 30px!important;
+}
+
+.pl-120 {
+	padding-left: 120px!important;
+}
+
+.pl-60 {
+	padding-left: 60px!important;
+}
+
+.pr-120 {
+	padding-right: 120px!important;
+}
+
+.pl-130 {
+	padding-left: 130px!important;
+}
+ 
+.pr-60 {
+	padding-right: 60px!important;
+}
+
+.pr-10 {
+	padding-right: 10px!important;
+}
+
+.pl-10 {
+	padding-left: 10px;
+}
+
+.max-w-530 {
+	max-width: 530px;
+}
+
+.ml-4 {
+    margin-left: 1.5em;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 24px;
+	font-family: $roboto;
+}
+
+ul {
+	padding-left: 0!important;
+}
+
+.height-100 {
+	height: 100%!important;
+}
+
+.center {
+	margin: 0 auto;
+    display: table; 
+}
+
+
+
+/* Buttons */
+
+.btn-danger:hover {
+    background-color: $white!important;
+    color: $red!important;
+    border-color: $red!important;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    background-color: $white!important;
+    color: $red;
+	border-color: $red!important; 
+}
+
+.btn-light:hover {
+    background-color: transparent!important;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    border-width: 1px!important;
+}

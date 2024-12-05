@@ -1,0 +1,107 @@
+.container {
+	max-width: 1200px;
+}
+.thank-you-message {
+	display: none;
+}
+.img-col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-form { 
+    background: 
+        url('../../assets/img/texturas.png') top right repeat,
+        url('../../assets/img/fondo.jpg') center repeat; 
+        width: 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position:
+          bottom right,
+          left,
+          right; 
+    background-size: cover;
+    margin: 0; 
+    height: 100vh;
+} 
+
+.img-col img {
+  height: 100vh;
+  @media (min-width: 768px) {
+    margin-top: -50px;
+  }
+}
+
+#form-container {
+  background-color: $grey;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+  h1 {
+    font-size: 16px;
+    color: $grey-one;
+    span {
+      font-size: 20px;
+      background-color: $purple;
+      width: 30px;
+      height: 30px;
+      display: inline-grid;
+      border-radius: 30px;
+      align-items: center;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  form#registro-form {
+    padding-top: 20px;
+  }
+
+  input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: $grey-one;
+    height: 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    background: $purple!important;
+    color: #fff !important;
+    text-align: center;
+    width: 70%;
+    border-color: $purple!important;
+    margin: 30px auto;
+    display: block;
+    
+  }
+  .wpcf7-list-item-label {
+    color: $violet;
+  }
+  input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    background: $purple!important;
+    color: #fff !important;
+    text-align: center;
+    width: 70%;
+    border-color: $purple!important;
+  }
+  input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    vertical-align: middle;
+    width: 15px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+}
